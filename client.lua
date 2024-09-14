@@ -132,12 +132,13 @@ Citizen.CreateThread(function()
                 if playerHealth <= reviveHealth then
                     
                     
-                    DisplayHelpText(_U('revive'))
+                    
 
                     if drawMarker then
                         DrawMarker(markerType, circleCenter.x, circleCenter.y, circleCenter.z - 1.0, 0, 0, 0, 0, 0, 0, circleRadius * 2.0, circleRadius * 2.0, 1.0, 255, 0, 0, 200, false, true, 2, nil, nil, false)
                     end
                     if distance <= circleRadius and IsControlJustReleased(0, 38) then
+                        DisplayHelpText(_U('revive'))
                         if useBilling then
                             if okokBilling then
                                 TriggerServerEvent("okokBilling:CreateCustomInvoice", playerServerId, revivePrice, _U('billing_reason'), _U('invoiceSource'), society, _U('jobName'))
@@ -154,13 +155,14 @@ Citizen.CreateThread(function()
 
                 -- If playerhealth is lower than or equal to
                 elseif playerHealth <= healHealth then
-                    DisplayHelpText(_U('heal'))
+                    
                     
                     if drawMarker then
                         DrawMarker(markerType, circleCenter.x, circleCenter.y, circleCenter.z - 1.0, 0, 0, 0, 0, 0, 0, circleRadius * 2.0, circleRadius * 2.0, 1.0, 0, 255, 0, 200, false, true, 2, nil, nil, false)
                     end
 
                     if distance <= circleRadius and IsControlJustReleased(0, 38) then
+                        DisplayHelpText(_U('heal'))
                         if useBilling then
                             if okokBilling then
                                 TriggerServerEvent("okokBilling:CreateCustomInvoice", playerServerId, revivePrice, _U('billing_reason'), _U('invoiceSource'), society, _U('jobName'))
@@ -209,13 +211,14 @@ Citizen.CreateThread(function()
 
                 -- If playerhealth is lower than or equal to
                 if playerHealth <= reviveHealth then
-                    DisplayHelpText(_U('revive'))
+                    
                     
                     if drawMarker then
                         DrawMarker(markerType, circleCenter.x, circleCenter.y, circleCenter.z - 1.0, 0, 0, 0, 0, 0, 0, circleRadius * 2.0, circleRadius * 2.0, 1.0, 255, 0, 0, 200, false, true, 2, nil, nil, false)
                     end
 
                     if distance <= circleRadius and IsControlJustReleased(0, 38) then
+                        DisplayHelpText(_U('revive'))
                         if useBilling then
                             if okokBilling then
                                 TriggerServerEvent("okokBilling:CreateCustomInvoice", playerServerId, revivePrice, _U('billing_reason'), _U('invoiceSource'), society, _U('jobName'))
@@ -230,12 +233,13 @@ Citizen.CreateThread(function()
                     end
                 -- If playerhealth is lower than or equal to
                 elseif playerHealth <= healHealth then
-                    DisplayHelpText(_U('heal'))
+                    
                     
                     if drawMarker then
                         DrawMarker(markerType, circleCenter.x, circleCenter.y, circleCenter.z - 1.0, 0, 0, 0, 0, 0, 0, circleRadius * 2.0, circleRadius * 2.0, 1.0, 0, 255, 0, 200, false, true, 2, nil, nil, false)
                     end
                     if distance <= circleRadius and IsControlJustReleased(0, 38) then
+                        DisplayHelpText(_U('heal'))
                         if useBilling then
                             if okokBilling then
                                 TriggerServerEvent("okokBilling:CreateCustomInvoice", playerServerId, revivePrice, _U('billing_reason'), _U('invoiceSource'), society, _U('jobName'))
