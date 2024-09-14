@@ -1,2 +1,0 @@
-Triggers if needed:
-TriggerServerEvent('os_revivestation:client:count') -- Harmless: Counts how many people have the specified job
